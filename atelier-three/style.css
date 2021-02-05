@@ -1,0 +1,291 @@
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: 'Barlow Semi Condensed';
+  font-size: 13px;
+  color: hsl(0, 0%, 81%);
+}
+
+.grid-section {
+  width: 1160px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding-top: 5rem;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.canal-1 {
+  border-radius: 10px;
+  background-color: hsl(263, 55%, 52%);
+  background-image: url('img/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
+  grid-column: 1 / 7;
+  grid-row: 1 / span 1;
+}
+
+.canal-1 #portrait {
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+  border: solid 2px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.canal-1 .details {
+  margin-top: 12px;
+  margin-left: -5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.canal-1 .grad {
+  opacity: 50%;
+  font-size: 0.8rem;
+}
+
+.canal-1 .heading {
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+.canal-1 .text {
+  opacity: 70%;
+  margin: 20px;
+  line-height: 1.3;
+}
+
+.canal-2 {
+  border-radius: 10px;
+  background-color: hsl(217, 19%, 35%);
+  grid-column: 7 / 10;
+  grid-row: 1 / span;
+}
+
+.canal-2 #portrait {
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+  border: solid 2px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.canal-2 .details {
+  margin-top: 12px;
+  margin-left: -5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.canal-2 .grad {
+  opacity: 50%;
+  font-size: 0.8rem;
+}
+
+.canal-2 .heading {
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+.canal-2 .text {
+  opacity: 70%;
+  margin: 20px;
+  line-height: 1.3;
+}
+
+.canal-3 {
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  grid-column: 1 / 4;
+  grid-row: 2 / span 1;
+}
+
+.canal-3 #portrait {
+  width: 35%;
+  height: 35%;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.canal-3 .details {
+  margin-top: 12px;
+  margin-left: -5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.canal-3 .name {
+  filter: brightness(50%);
+}
+
+.canal-3 .grad {
+  filter: brightness(50%);
+  opacity: 50%;
+  font-size: 0.8rem;
+}
+
+.canal-3 .heading {
+  filter: brightness(50%);
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+.canal-3 .text {
+  filter: brightness(50%);
+  opacity: 70%;
+  margin: 20px;
+  line-height: 1.3;
+}
+
+.canal-4 {
+  border-radius: 10px;
+  background-color: hsl(219, 29%, 14%);
+  grid-column: 4 / 10;
+  grid-row: 2 / span 1;
+}
+
+.canal-4 #portrait {
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+  border: solid hsl(263, 55%, 52%) 2px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.canal-4 .details {
+  margin-top: 12px;
+  margin-left: -5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.canal-4 .grad {
+  opacity: 50%;
+  font-size: 0.8rem;
+}
+
+.canal-4 .heading {
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+.canal-4 .text {
+  opacity: 70%;
+  margin: 20px;
+  line-height: 1.3;
+}
+
+.canal-5 {
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  grid-column: 10 / span 3;
+  grid-row: 1 / span 2;
+}
+
+.canal-5 #portrait {
+  width: 35%;
+  height: 35%;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.canal-5 .details {
+  margin-top: 12px;
+  margin-left: -5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.canal-5 .name {
+  filter: brightness(50%);
+}
+
+.canal-5 .grad {
+  filter: brightness(50%);
+  opacity: 50%;
+  font-size: 0.8rem;
+}
+
+.canal-5 .heading {
+  filter: brightness(50%);
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+.canal-5 .text {
+  filter: brightness(50%);
+  opacity: 70%;
+  margin: 20px;
+  line-height: 1.3;
+}
+
+@media (max-width: 1025px) {
+  .grid-section {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin: auto;
+    margin-top: -4rem;
+  }
+  .grid-section .canal-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .grid-section .canal-1 .text {
+    line-height: 1.4;
+    font-size: 0.9rem;
+  }
+  .grid-section .canal-2 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .grid-section .canal-2 .text {
+    line-height: 1.4;
+    font-size: 0.9rem;
+  }
+  .grid-section .canal-3 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .grid-section .canal-3 .text {
+    line-height: 1.4;
+    font-size: 0.9rem;
+  }
+  .grid-section .canal-4 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .grid-section .canal-4 .text {
+    line-height: 1.4;
+    font-size: 0.9rem;
+  }
+  .grid-section .canal-5 {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .grid-section .canal-5 .text {
+    line-height: 1.4;
+    font-size: 0.9rem;
+  }
+}

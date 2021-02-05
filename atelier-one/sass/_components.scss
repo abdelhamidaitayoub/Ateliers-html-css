@@ -1,0 +1,129 @@
+///////////////////////
+// REVIEWS  COMPONENT
+//////////////////////
+
+.reviews {
+  padding: 7rem;
+
+  @media only screen and (max-width: $mobile-screen) {
+    padding: 4rem;
+  }
+
+  &__item {
+    background-color: var(--color-gray-light);
+    flex: 0 0 2rem;
+    padding: 2.2rem 6rem;
+    border-radius: 8px;
+    display: flex;
+
+    .stars {
+      margin: 0 3rem;
+
+      img {
+        height: 1.6rem;
+        margin: 0 2px;
+        @media only screen and (max-width: $mobile-screen) {
+          height: 2rem;
+          margin: 10px 0;
+        }
+      }
+    }
+
+    &--1 {
+      align-self: flex-start;
+    }
+
+    &--2 {
+      align-self: center;
+    }
+
+    &--3 {
+      align-self: flex-end;
+    }
+
+    @media only screen and (max-width: $mobile-screen) {
+      width: 100%;
+      flex: 0 0 12rem;
+    }
+
+    @media only screen and (max-width: $medium-screen) {
+      flex-direction: column;
+      align-self: center;
+      width: 100%;
+      padding: 2rem 6rem;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.3rem;
+    color: var(--color-primary-dark);
+    font-weight: 700;
+    @media only screen and (max-width: $mobile-screen) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+///////////////////
+// CARD COMPONENT
+//////////////////
+
+.card {
+  background-color: var(--color-primary-dark);
+  border-radius: 10px;
+  margin: 2rem;
+  padding: 4rem;
+  flex: 0 0 100%/3;
+
+  &:not(:nth-child(2)) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media only screen and (max-width: $mobile-screen) {
+    margin: 0 0 10px 0;
+  }
+
+  // &--1 {
+  //   align-self: flex-start;
+  // }
+  // &--2 {
+  //   align-self: center;
+  // }
+  // &--3 {
+  //   align-self: flex-end;
+  // }
+
+  &__person-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    img {
+      height: 4rem;
+      border-radius: 200px;
+      margin-right: 3rem;
+    }
+
+    .info {
+      h5 {
+        font-size: 1.3rem;
+        color: var(--color-gray-light);
+        margin-bottom: 3px;
+      }
+
+      p {
+        font-size: 1.3rem;
+        color: var(--color-primary-light);
+      }
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: var(--color-gray-light);
+  }
+}
